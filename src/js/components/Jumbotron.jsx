@@ -10,12 +10,14 @@ const Jumbotron = ({ title }) => {
         backgroundPosition: "center",
       }}
     >
-      <div className="container-fluid py-5">
+      <div className="py-5">
+      <div className="container">
         <h1 className="display-5 fw-bold">{title}</h1>
         <p className="col-md-8 fs-4 mx-auto text-center">
           En AutoCars nos esforzamos por ayudarte a encontrar el auto de tus sueños tanto en vehículos usados como 0km.
         </p>
         <button className="btn btn-dark btn-lg">¿ QUE VEHÍCULO QUIERES COMPRAR ?</button>
+      </div>
       </div>
     </div>
   );

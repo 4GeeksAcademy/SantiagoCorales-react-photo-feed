@@ -6,9 +6,11 @@ const Container = ({ section }) => {
   return (
     <div className="container mt-3">
       <Jumbotron title={section.title} />
-      <div className="d-flex justify-content-center flex-wrap">
+      <div className="row">
         {section.cards.map((card, index) => (
-          <Card key={index} {...card} />
+          <div className="col-md-3 mb-4" key={index}>
+            <Card {...card} />
+          </div>
         ))}
       </div>
     </div>
